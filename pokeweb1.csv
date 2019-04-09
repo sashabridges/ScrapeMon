@@ -1,0 +1,152 @@
+,Name2,Classification,Base Experience,Hatch Egg Steps,Base Happiness,EV Values,Flavor Text
+0,Bulbasaur,Seed Pokemon,45,"5,120",70,1 Sp. Attack Point(s),"It can go for days without eating a single morsel. In the bulb on its back, it stores energy."
+1,Ivysaur,Seed Pokemon,45,"5,120",70,1 Sp. Attack Point(s)1 Sp. Defense Point(s),The bud on its back grows by drawing energy. It gives off an aroma when it is ready to bloom.
+2,Venusaur,Seed Pokemon,45,"5,120",70,2 Sp. Attack Point(s)1 Sp. Defense Point(s),Evolve Ivysaur
+3,Charmander,Lizard Pokemon,45,"5,120",70,1 Speed Point(s),The flame at the tip of its tail makes a sound as it burns. You can only hear it in quiet places.
+4,Charmeleon,Flame Pokemon,45,"5,120",70,1 Speed Point(s)1 Sp. Attack Point(s),"Tough fights could excite this Pokemon. When excited, it may breathe out bluish-white flames."
+5,Charizard,Flame Pokemon,45,"5,120",70,3 Sp. Attack Point(s),
+6,Squirtle,Tiny Turtle Pokemon,45,"5,120",70,1 Defense Point(s),Shoots water at prey while in the water. Withdraws into its shell when in danger.
+7,Wartortle,Turtle Pokemon,45,"5,120",70,1 Defense Point(s)1 Sp. Defense Point(s),"When tapped on its head, this Pokemon will pull it in, but its tail will still stick out a little bit."
+8,Blastoise,Shellfish Pokemon,45,"5,120",70,3 Sp. Defense Point(s),
+9,Caterpie,Worm Pokemon,255,"3,840",70,1 HP Point(s),
+10,Metapod,Cocoon Pokemon,120,"3,840",70,2 Defense Point(s),
+11,Butterfree,Butterfly Pokemon,45,"3,840",70,2 Sp. Attack Point(s)1 Sp. Defense Point(s),Evolve Metapod
+12,Weedle,Hairy Pokemon,255,"3,840",70,1 Speed Point(s),
+13,Kakuna,Cocoon Pokemon,120,"3,840",70,2 Defense Point(s),"Able to move only slightly. When endangered, it may stick out its stinger and poison its enemy."
+14,Beedrill,Poison Bee Pokemon,45,"3,840",70,2 Attack Point(s)1 Sp. Defense Point(s),It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.
+15,Pidgey,Tiny Bird Pokemon,255,"3,840",70,1 Speed Point(s),
+16,Pidgeotto,Bird Pokemon,120,"3,840",70,2 Speed Point(s),This Pokemon is full of vitality. It constantly flies around its large territory in search of prey.
+17,Pidgeot,Bird Pokemon,45,"3,840",70,3 Speed Point(s),"This Pokemon flies at Mach 2 speed, seeking prey. Its large talons are feared as wicked weapons."
+18,Rattata,Mouse Pokemon,255,"3,840",70,1 Speed Point(s)Alola Form1 Speed Point(s),"Route 1, Route 2, Route 3, Route 4, Route 5, Route 6, Route 7, Route 8, Route 9, Route 10, Route 11, Route 16, Route 17, Route 18, Route 21, Route 22, Pokemon Mansion (Kanto Form)Cerulean City Trade (Alola Form)"
+19,Raticate,Mouse Pokemon,127,"3,840",70,2 Speed Point(s)Alola Form2 Speed Point(s),"Route 7, Route 8, Route 9, Route 10, Route 11, Route 16, Route 17, Route 18, Route 21, Pokemon Mansion (Kanto Form)Evolve Rattata (Alola Form)"
+20,Spearow,Tiny Bird Pokemon,255,"3,840",70,1 Speed Point(s),
+21,Fearow,Beak Pokemon,90,"3,840",70,2 Speed Point(s),
+22,Ekans,Snake Pokemon,255,"5,120",70,1 Attack Point(s),
+23,Arbok,Cobra Pokemon,90,"5,120",70,2 Attack Point(s),
+24,Pikachu,Mouse Pokemon,190,"2,560",70,2 Speed Point(s),Viridian Forest
+25,Raichu,Mouse Pokemon,75,"2,560",70,3 Speed Point(s)Alola Form3 Speed Point(s),Evolve Pikachu (Kanto Form)Saffron City Trade (Alola Form)
+26,Sandshrew,Mouse Pokemon,255,"5,120",70,1 Defense Point(s)Alola Form1 Defense Point(s),"Trade from Pokemon: Let's Go, Pikachu!"
+27,Sandslash,Mouse Pokemon,90,"5,120",70,2 Defense Point(s)Alola Form2 Defense Point(s),"Trade from Pokemon: Let's Go, Pikachu!"
+28,Nidoran F,Poison Pin Pokemon,235,"5,120",70,1 HP Point(s),
+29,Nidorina,Poison Pin Pokemon,120,"5,120",70,2 HP Point(s),"When resting deep in its burrow, its barbs always retract. This is proof that it is relaxed."
+30,Nidoqueen,Drill Pokemon,45,"5,120",70,3 HP Point(s),
+31,Nidoran M,Poison Pin Pokemon,235,"5,120",70,1 Attack Point(s),"Its large ears are always kept upright. If it senses danger, it will attack with a poisonous sting."
+32,Nidorino,Poison Pin Pokemon,120,"5,120",70,2 Attack Point(s),"Its horn contains venom. If it stabs an enemy with the horn, the impact makes the poison leak out."
+33,Nidoking,Drill Pokemon,45,"5,120",70,3 Attack Point(s),
+34,Clefairy,Fairy Pokemon,150,"2,560",140,2 HP Point(s),
+35,Clefable,Fairy Pokemon,25,"2,560",140,3 HP Point(s),
+36,Vulpix,Fox Pokemon,190,"5,120",70,1 Speed Point(s)Alola Form1 Speed Point(s),"Route 5, Route 6, Route 7, Route 8 (Kanto Form)Celadon City Trade (Alola Form)"
+37,Ninetales,Fox Pokemon,75,"5,120",70,1 Speed Point(s)1 Sp. Defense Point(s)Alola Form2 Speed Point(s),"Route 7, Route 8 (Kanto Form)Evolve Vulpix (Alola Form"
+38,Jigglypuff,Balloon Pokemon,170,"2,560",70,2 HP Point(s),
+39,Wigglytuff,Balloon Pokemon,50,"2,560",70,3 HP Point(s),
+40,Zubat,Bat Pokemon,255,"3,840",70,1 Speed Point(s),"Diglett's Cave, Mt. Moon, Cerulean Cave, Rock Tunnel, Pokemon Tower, Seafoam Islands, Victory Road"
+41,Golbat,Bat Pokemon,90,"3,840",70,2 Speed Point(s),"Cerulean Cave, Rock Tunnel, Pokemon Tower, Seafoam Islands, Victory Road"
+42,Oddish,Weed Pokemon,255,"5,120",70,1 Sp. Attack Point(s),"It may be mistaken for a clump of weeds. If you try to yank it out of the ground, it shrieks horribly."
+43,Gloom,Weed Pokemon,120,"5,120",70,2 Sp. Attack Point(s),"Trade from Pokemon: Let's Go, Pikachu!"
+44,Vileplume,Flower Pokemon,45,"5,120",70,3 Sp. Attack Point(s),"Trade from Pokemon: Let's Go, Pikachu!"
+45,Paras,Mushroom Pokemon,190,"5,120",70,1 Attack Point(s),
+46,Parasect,Mushroom Pokemon,75,"5,120",70,2 Attack Point(s)1 Defense Point(s),
+47,Venonat,Insect Pokemon,190,"5,120",70,1 Sp. Defense Point(s),"Its large eyes act as radar. In a bright place, you can see that they are clusters of many tiny eyes."
+48,Venomoth,Poison Moth Pokemon,75,"5,120",70,1 Speed Point(s)1 Sp. Attack Point(s),The powdery scales on its wings are hard to remove from skin. They also contain poison that leaks out on contact.
+49,Diglett,Mole Pokemon,255,"5,120",70,1 Speed Point(s)Alola Form1 Speed Point(s),Diglett's Cave (Kanto Form)Lavender Town Trade (Alola Form)
+50,Dugtrio,Mole Pokemon,50,"5,120",70,2 Speed Point(s)Alola Form2 Attack Point(s),Diglett's Cave (Kanto Form)Evolve Diglett (Alola Form)
+51,Meowth,Scratch Cat Pokemon,255,"5,120",70,1 Speed Point(s)Alola Form1 Speed Point(s),"Route 24, Route 25 (Kanto Form)Cinnabar Island Trade (Alola Form"
+52,Persian,Classy Cat Pokemon,90,"5,120",70,2 Speed Point(s)Alola Form2 Speed Point(s),Evolve Meowth (Kanto Form)Evolve Meowth (Alola Form)
+53,Psyduck,Duck Pokemon,190,"5,120",70,1 Sp. Attack Point(s),
+54,Golduck,Duck Pokemon,75,"5,120",70,2 Sp. Attack Point(s),
+55,Mankey,Pig Monkey Pokemon,190,"5,120",70,1 Attack Point(s),
+56,Primeape,Pig Monkey Pokemon,75,"5,120",70,2 Attack Point(s),
+57,Growlithe,Puppy Pokemon,190,"5,120",70,1 Attack Point(s),
+58,Arcanine,Legendary Pokemon,75,"5,120",70,2 Attack Point(s),
+59,Poliwag,Tadpole Pokemon,255,"5,120",70,1 Speed Point(s),
+60,Poliwhirl,Tadpole Pokemon,120,"5,120",70,2 Speed Point(s),
+61,Poliwrath,Tadpole Pokemon,45,"5,120",70,3 Defense Point(s),
+62,Abra,Psi Pokemon,200,"5,120",70,1 Sp. Attack Point(s),"It sleeps 18 hours a day. Even while sleeping, it will teleport itself to treetops and pick and eat berries there."
+63,Kadabra,Psi Pokemon,100,"5,120",70,2 Sp. Attack Point(s),"Route 7, Route 8"
+64,Alakazam,Psi Pokemon,50,"5,120",70,3 Sp. Attack Point(s),Evolve Kadabra
+65,Machop,Superpower Pokemon,180,"5,120",70,1 Attack Point(s),
+66,Machoke,Superpower Pokemon,90,"5,120",70,2 Attack Point(s),
+67,Machamp,Superpower Pokemon,45,"5,120",70,3 Attack Point(s),
+68,Bellsprout,Flower Pokemon,255,"5,120",70,1 Attack Point(s),Prefers hot and humid places. It ensnares tiny bugs with its vines and devours them.
+69,Weepinbell,Flycatcher Pokemon,120,"5,120",70,2 Attack Point(s),"When hungry, it swallows anything that moves. Its hapless prey is dissolved by strong acids."
+70,Victreebel,Flycatcher Pokemon,45,"5,120",70,3 Attack Point(s),"Lures prey with the sweet aroma of honey. Swallowed whole, the prey is dissolved in a day, bones and all."
+71,Tentacool,Jellyfish Pokemon,190,"5,120",70,1 Sp. Defense Point(s),
+72,Tentacruel,Jellyfish Pokemon,60,"5,120",70,2 Sp. Defense Point(s),
+73,Geodude,Rock Pokemon,255,"3,840",70,1 Defense Point(s)Alola Form1 Defense Point(s),"Mt. Moon, Cerulean Cave, Rock Tunnel, Victory Road (Kanto Form)Vermilion City Trade (Alola Form)"
+74,Graveler,Rock Pokemon,120,"3,840",70,2 Defense Point(s)Alola Form2 Defense Point(s),"Cerulean Cave, Rock Tunnel, Victory Road (Kanto Form)Evolve Geodude (Alola Form)"
+75,Golem,Megaton Pokemon,45,"3,840",70,3 Defense Point(s)Alola Form3 Defense Point(s),Evolve Graveler
+76,Ponyta,Fire Horse Pokemon,190,"5,120",70,1 Speed Point(s),Capable of jumping incredibly high. Its hooves and sturdy legs absorb the impact of a hard landing.
+77,Rapidash,Fire Horse Pokemon,60,"5,120",70,2 Speed Point(s),"Just loves to run. If it sees something faster than itself, it will give chase at top speed."
+78,Slowpoke,Dopey Pokemon,190,"5,120",70,1 HP Point(s),
+79,Slowbro,Hermit Crab Pokemon,75,"5,120",70,2 Defense Point(s),
+80,Magnemite,Magnet Pokemon,190,"5,120",70,1 Sp. Attack Point(s),
+81,Magneton,Magnet Pokemon,60,"5,120",70,2 Sp. Attack Point(s),
+82,Farfetch'd,Wild Duck Pokemon,45,"5,120",70,1 Attack Point(s),"They live where reedy plants grow. Farfetchd are rarely seen, so it thought their numbers are decreasing."
+83,Doduo,Twin Bird Pokemon,190,"5,120",70,1 Attack Point(s),"Route 16, Route 17, Route 18"
+84,Dodrio,Triple Bird Pokemon,45,"5,120",70,2 Attack Point(s),"Route 16, Route 17, Route 18"
+85,Seel,Sea Lion Pokemon,190,"5,120",70,1 Sp. Defense Point(s),
+86,Dewgong,Sea Lion Pokemon,75,"5,120",70,2 Sp. Defense Point(s),
+87,Grimer,Sludge Pokemon,190,"5,120",70,1 HP Point(s)Alola Form1 HP Point(s),"Trade from Pokemon: Let's Go, Pikachu!"
+88,Muk,Sludge Pokemon,75,"5,120",70,1 HP Point(s)1 Attack Point(s)Alola Form1 HP Point(s)1 Attack Point(s),"Trade from Pokemon: Let's Go, Pikachu!"
+89,Shellder,Bivalve Pokemon,190,"5,120",70,1 Defense Point(s),
+90,Cloyster,Bivalve Pokemon,60,"5,120",70,2 Defense Point(s),
+91,Gastly,Gas Pokemon,190,"5,120",70,1 Sp. Attack Point(s),
+92,Haunter,Gas Pokemon,90,"5,120",70,2 Sp. Attack Point(s),
+93,Gengar,Shadow Pokemon,45,"5,120",70,3 Sp. Attack Point(s),
+94,Onix,Rock Snake Pokemon,45,"6,400",70,1 Defense Point(s),Burrows at high speed in search of food. The tunnels it leaves are used as homes by Diglett.
+95,Drowzee,Hypnosis Pokemon,190,"5,120",70,1 Sp. Defense Point(s),
+96,Hypno,Hypnosis Pokemon,75,"5,120",70,2 Sp. Defense Point(s),Evolve Drowzee
+97,Krabby,River Crab Pokemon,225,"5,120",70,1 Attack Point(s),"Its pincers are superb weapons. They sometimes break off during battle, but they grow back fast."
+98,Kingler,Pincer Pokemon,60,"5,120",70,2 Attack Point(s),"One claw grew massively and is as hard as steel. It has 10,000-horsepower strength. However, it is too heavy."
+99,Voltorb,Ball Pokemon,190,"5,120",70,1 Speed Point(s),It is said to camouflage itself as a Po Ball. It will self-destruct with very little stimulus.
+100,Electrode,Ball Pokemon,60,"5,120",70,2 Speed Point(s),Stores electrical energy inside its body. Even the slightest shock could trigger a huge explosion.
+101,Exeggcute,Egg Pokemon,90,"5,120",70,1 Defense Point(s),
+102,Exeggutor,Coconut Pokemon,45,"5,120",70,2 Sp. Attack Point(s)Alola Form2 Sp. Attack Point(s),Route 23 (Kanto Form)Indigo Plateau Trade (Alola Form)
+103,Cubone,Lonely Pokemon,190,"5,120",70,1 Defense Point(s),
+104,Marowak,Bone Keeper Pokemon,75,"5,120",70,2 Defense Point(s)Alola Form2 Defense Point(s),Evolve Cubone (Kanto Form)Fuchsia City Trade (Alola Form)
+105,Hitmonlee,Kicking Pokemon,45,"6,400",70,2 Attack Point(s),"When kicking, the sole of its foot turns as hard as a diamond on impact and destroys its enemy."
+106,Hitmonchan,Punching Pokemon,45,"6,400",70,2 Sp. Defense Point(s),Punches in corkscrew fashion. It can punch its way through a concrete wall like a drill.
+107,Lickitung,Licking Pokemon,45,"5,120",70,2 HP Point(s),
+108,Koffing,Poison Gas Pokemon,190,"5,120",70,1 Defense Point(s),"In hot places, its internal gases could expand and explode without any warning. Be very careful!"
+109,Weezing,Poison Gas Pokemon,60,"5,120",70,2 Defense Point(s),
+110,Rhyhorn,Spikes Pokemon,120,"5,120",70,1 Defense Point(s),"Cerulean Cave, Rock Tunnel, Victory Road"
+111,Rhydon,Drill Pokemon,60,"5,120",70,2 Attack Point(s),"Cerulean Cave, Victory Road"
+112,Chansey,Egg Pokemon,30,"10,240",140,2 HP Point(s),The eggs laid by Chansey are rich in nutrients and a favorite food of many Pokemon.
+113,Tangela,Vine Pokemon,45,"5,120",70,1 Defense Point(s),Its identity is obscured by masses of thick blue vines. The vines are said to never stop growing.
+114,Kangaskhan,Parent Pokemon,45,"5,120",70,2 HP Point(s),
+115,Horsea,Dragon Pokemon,225,"5,120",70,1 Sp. Attack Point(s),"If it senses any danger, it will vigorously spray water or a special type of ink from its mouth."
+116,Seadra,Dragon Pokemon,75,"5,120",70,1 Defense Point(s)1 Sp. Attack Point(s),Touching the back fin causes numbness. It hooks its tail to coral to stay in place while sleeping.
+117,Goldeen,Goldfish Pokemon,225,"5,120",70,1 Attack Point(s),Route 6
+118,Seaking,Goldfish Pokemon,60,"5,120",70,2 Attack Point(s),Route 6
+119,Staryu,Starshape Pokemon,225,"5,120",70,1 Speed Point(s),
+120,Starmie,Mysterious Pokemon,60,"5,120",70,2 Speed Point(s),
+121,Mr. Mime,Barrier Pokemon,45,"6,400",70,2 Sp. Defense Point(s),
+122,Scyther,Mantis Pokemon,45,"6,400",70,1 Attack Point(s),"Trade from Pokemon: Let's Go, Pikachu!"
+123,Jynx,Humanshape Pokemon,45,"6,400",70,2 Sp. Attack Point(s),
+124,Electabuzz,Electric Pokemon,45,"6,400",70,2 Speed Point(s),
+125,Magmar,Spitfire Pokemon,45,"6,400",70,2 Sp. Attack Point(s),
+126,Pinsir,Stagbeetle Pokemon,45,"6,400",70,2 Attack Point(s),
+127,Tauros,Wild Bull Pokemon,45,"5,120",70,1 Attack Point(s)1 Speed Point(s),
+128,Magikarp,Fish Pokemon,255,"1,280",70,1 Speed Point(s),"Route 4, Route 10, Route 12, Route 13, Route 18, Route 19, Route 20, Route 21, Route 22, Route 23, Route 24, Route 25, Cerulean Cave, Seafoam Islands"
+129,Gyarados,Atrocious Pokemon,45,"1,280",70,2 Attack Point(s),Route 20
+130,Lapras,Transport Pokemon,45,"10,240",70,2 HP Point(s),
+131,Ditto,Transform Pokemon,35,"5,120",70,1 HP Point(s),
+132,Eevee,Evolution Pokemon,45,"8,960",70,1 Sp. Defense Point(s),
+133,Vaporeon,Bubble Jet Pokemon,45,"8,960",70,2 HP Point(s),
+134,Jolteon,Lightning Pokemon,45,"8,960",70,2 Speed Point(s),
+135,Flareon,Flame Pokemon,45,"8,960",70,2 Attack Point(s),
+136,Porygon,Virtual Pokemon,45,"5,120",70,1 Sp. Attack Point(s),
+137,Omanyte,Spiral Pokemon,45,"7,680",70,1 Defense Point(s),
+138,Omastar,Spiral Pokemon,45,"7,680",70,2 Defense Point(s),Its heavy shell is thought to be the reason this ancient Pokemon died out. It apparently a distant ancestor of Octillery.
+139,Kabuto,Shellfish Pokemon,45,"7,680",70,1 Defense Point(s),This Pokemon thrived 300 million years ago. It said that living specimens can still be seen in a certain regiona rare sight.
+140,Kabutops,Shellfish Pokemon,45,"7,680",70,2 Attack Point(s),
+141,Aerodactyl,Fossil Pokemon,45,"8,960",70,2 Speed Point(s),
+142,Snorlax,Sleeping Pokemon,25,"10,240",70,2 HP Point(s),
+143,Articuno,Freeze Pokemon,3,"20,480",35,3 Sp. Defense Point(s),A legendary bird Pokemon. It freezes water that is contained in winter air and makes it snow.
+144,Zapdos,Electric Pokemon,3,"20,480",35,3 Sp. Attack Point(s),This legendary bird Pokemon is said to appear when the sky turns dark and lightning showers down.
+145,Moltres,Flame Pokemon,3,"20,480",35,3 Sp. Attack Point(s),"A legendary bird Pokemon. As it flaps its flaming wings, even the night sky will turn red."
+146,Dratini,Dragon Pokemon,45,"10,240",35,1 Attack Point(s),It grows by molting repeatedly. Boots made from the tanned cast-off skin are a super luxury item.
+147,Dragonair,Dragon Pokemon,45,"10,240",35,2 Attack Point(s),It has long been thought that its crystalline orbs are imbued with the power to control the weather.
+148,Dragonite,Dragon Pokemon,45,"10,240",35,3 Attack Point(s),
+149,Mewtwo,Genetic Pokemon,3,"30,720",0,3 Sp. Attack Point(s),
+150,Mew,New Species Pokemon,45,"30,720",100,3 HP Point(s),"When viewed through a microscope, this Pokemon short, fine, delicate hair can be seen."
