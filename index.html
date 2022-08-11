@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ScrapeMon 2022 Data Visualization Project</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	
+    <h1>Gotta Analyze 'Em All</h1>
+    <p>Tables are from <a href="https://tablesgenerator.com">tablesgenerator.com</a>, because I am lazy and can't be bothered to make my own tables.</p>
+    <p>This data focuses only on Generation 1 of Pokemon, aka the first 151 Pokemon. It does include Fairy typing. Data is from <a href="https://pokeapi.co">pokeapi.co</a> Version 2.</p>
+    <h1>Questions for Pokemon</h1>
+    <ul>
+        <li><h3>How many Pokemon with two types have good speed?</h3></li>
+        <button onclick="hideQ1()">Reveal</button>
+        <div id="q1" style="display: none;">
+        <p>If we classify "Good Speed" as having a speed >= 90, there are 15 Pokemon with good speed.</p>
+        <p>We found this out by seperating the Pokemon that who have two different types.</p>
+        <div>only_two_type = api_df[api_df["Type 2"] != "No Second Type"]</div>
+        <p>Then we used sort_values() to sort by the Speed column.</p>
+        <div>speed = only_two_type.sort_values(by='Speed', ascending=False)</div>
+        <p>The Pokemon with the highest Speed stat is Wigglytuff with a Speed of 140. It is a Normal/Fairy type Pokemon, and it's pre-evolution, Jigglypuff, comes in 3rd place with a Speed of 115.</p>
+        <p>Second place goes to Lapras, which has a Speed of 130. Lapras is a Water/Ice type Pokemon. 6 Water-type Pokemon fall in the good speed category.</p>
+        <p>5 Flying-type Pokemon fall in the good speed category.</p>
+        <p>With this data, we can make an educated guess that any new Water-type and Flying-type Pokemon we see are generally fast.</p>
+        <style type="text/css">
+            .tg  {border-collapse:collapse;border-spacing:0;}
+            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg .tg-0lax{text-align:left;vertical-align:top}
+            .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+            </style>
+            <table class="tg">
+            <thead>
+              <tr>
+                <th class="tg-0lax">Number</th>
+                <th class="tg-0pky">Pokemon</th>
+                <th class="tg-0lax">Speed</th>
+                <th class="tg-0pky">Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-0lax">40</td>
+                <td class="tg-0pky">Wigglytuff</td>
+                <td class="tg-0lax">140</td>
+                <td class="tg-0pky">Normal/Fairy</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">131</td>
+                <td class="tg-0lax">Lapras</td>
+                <td class="tg-0lax">130</td>
+                <td class="tg-0lax">Ice/Water</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">39</td>
+                <td class="tg-0lax">Jigglypuff</td>
+                <td class="tg-0lax">115</td>
+                <td class="tg-0lax">Normal/Fairy</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">112</td>
+                <td class="tg-0lax">Rhydon</td>
+                <td class="tg-0lax">105</td>
+                <td class="tg-0lax">Ground/Rock</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">103</td>
+                <td class="tg-0lax">Exeguttor</td>
+                <td class="tg-0lax">95</td>
+                <td class="tg-0lax">Grass/Psychic</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">80</td>
+                <td class="tg-0lax">Slowbro</td>
+                <td class="tg-0lax">95</td>
+                <td class="tg-0lax">Water/Psychic</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">130</td>
+                <td class="tg-0lax">Gyarados</td>
+                <td class="tg-0lax">95</td>
+                <td class="tg-0lax">Water/Flying</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">149</td>
+                <td class="tg-0lax">Dragonite</td>
+                <td class="tg-0lax">91</td>
+                <td class="tg-0lax">Dragon/Flying</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">87</td>
+                <td class="tg-0lax">Dewgong</td>
+                <td class="tg-0lax">90</td>
+                <td class="tg-0lax">Water/Ice</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">62</td>
+                <td class="tg-0lax">Poliwrath</td>
+                <td class="tg-0lax">90</td>
+                <td class="tg-0lax">Water/Fighting</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">146</td>
+                <td class="tg-0lax">Moltres</td>
+                <td class="tg-0lax">90</td>
+                <td class="tg-0lax">Fire/Flying</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">144</td>
+                <td class="tg-0lax">Articuno</td>
+                <td class="tg-0lax">90</td>
+                <td class="tg-0lax">Ice/Flying</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">145</td>
+                <td class="tg-0lax">Zapdos</td>
+                <td class="tg-0lax">90</td>
+                <td class="tg-0lax">Electric/Flying</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">31</td>
+                <td class="tg-0lax">Nidoqueen</td>
+                <td class="tg-0lax">90</td>
+                <td class="tg-0lax">Poison/Ground</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">79</td>
+                <td class="tg-0lax">Slowpoke</td>
+                <td class="tg-0lax">90</td>
+                <td class="tg-0lax">Water/Poison</td>
+              </tr>
+            </tbody>
+            </table>
+        </div> <!-- End Q1-->
+
+        <li><h3>What type of Pokemon has the highest Special Attack?</h3></li>
+        <button onclick="hideQ2()">Reveal</button>
+        <div id="q2" style="display: none;">
+        <p>The individual Pokemon with the highest Special Attack is Cloyster, with 180 Special Attack.</p>
+        <p>However, what is the Pokemon type with the highest Special Attack?</p>
+        <p>To find out, we started back at the api_df. We sorted the DateFrame by the "Special Atk" column.</p>
+        <div>special_attack = api_df.sort_values(by='Special Atk', ascending=False)
+        dropped = special_attack.drop(special_attack.index[20:])</div>
+        <p>We take the top 20 Pokemon and now we will count the values.</p>
+        <div>dropped.value_counts(['Type 1', 'Type 2'])</div>
+        <p>The winning type of the Special Attack stat? Ground type!</p>
+        <p>There are 4 Pokemon with the highest Special Attack, and they are all both Rock and Ground type.</p>
+        <p>This would make it seem like Rock/Ground tied for the spot. But if you look at the data further, there are 2 Ground type Pokemon with no second type.</p>
+        <p>There's also a weird point - there is one Ground/Rock type Pokemon, which was counted in its own category.</p>
+        <p>The second type with the highest Special Attack is Water, followed by Rock.</p>
+
+        <style type="text/css">
+            .tg  {border-collapse:collapse;border-spacing:0;}
+            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+            .tg .tg-0lax{text-align:left;vertical-align:top}
+            </style>
+            <table class="tg">
+            <thead>
+              <tr>
+                <th class="tg-0pky">Type 1</th>
+                <th class="tg-0lax">Type 2</th>
+                <th class="tg-0lax">Count</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-0lax">Rock</td>
+                <td class="tg-0lax">Ground</td>
+                <td class="tg-0lax">4</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax">Water</td>
+                <td class="tg-0lax">3</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Water</td>
+                <td class="tg-0lax">No Second Type</td>
+                <td class="tg-0lax">3</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Ground</td>
+                <td class="tg-0lax">No Second Type</td>
+                <td class="tg-0lax">2</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Bug</td>
+                <td class="tg-0lax">No Second Type</td>
+                <td class="tg-0lax">1</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Grass</td>
+                <td class="tg-0lax">No Second Type</td>
+                <td class="tg-0lax">1</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Ground</td>
+                <td class="tg-0lax">Rock</td>
+                <td class="tg-0lax">1</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Ice</td>
+                <td class="tg-0lax">Flying</td>
+                <td class="tg-0lax">1</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Poison</td>
+                <td class="tg-0lax">No Second Type</td>
+                <td class="tg-0lax">1</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Psychic</td>
+                <td class="tg-0lax">No Second Type</td>
+                <td class="tg-0lax">1</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Water</td>
+                <td class="tg-0lax">Ice</td>
+                <td class="tg-0lax">1</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax">Psychic</td>
+                <td class="tg-0lax">1</td>
+              </tr>
+            </tbody>
+            </table>
+        </div> <!-- End Q2 -->
+
+        <li><h3>What are the most common Pokemon abilities?</h3></li>
+        <button onclick="hideQ3()">Reveal</button>
+        <div id="q3" style="display: none;">
+        <p>Figuring out the most common Pokemon abilities was pretty straight-forward. Once again value_counts() comes in handy.</p>
+        <div>api_df.value_counts(["Ability One"])
+            api_df.value_counts(["Ability Two"])</div>
+        <p>Using this, we're able to see that the most common Ability One is Chlorophyll with a count of 9. In second place is Swift Swim with 8. Third place is a four-way tie, with Run Away, Keen Eye, Poison Point, and Intimidate all having 7.</p>
+        <p>The most common Ability Two is a tie between Sturdy and Rivalry.</p>
+        </div> <!-- End Q3 -->
+
+        <li><h3>What are some trends with Rock-type Pokemon?</h3></li>
+        <button onclick="hideQ4()">Reveal</button>
+        <div id="q4" style="display: none;">
+        <p>First, to take a look at Rock-type Pokemon, we have to trim the DataFrame to only include Rock-types.</p>
+        <div>only_rocks = api_df[(api_df["Type 1"] == "rock") | (api_df["Type 2"] == "rock")]
+            only_rocks</div>
+        <p>With this, we just check Type 1 and Type 2 and make sure one of them is the desired type.</p>
+        <p>There are 11 Rock-type Pokemon.</p>
+        <style type="text/css">
+            .tg  {border-collapse:collapse;border-spacing:0;}
+            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+            .tg .tg-0lax{text-align:left;vertical-align:top}
+            </style>
+            <table class="tg">
+            <thead>
+              <tr>
+                <th class="tg-0pky">Name</th>
+                <th class="tg-0pky">Type 1</th>
+                <th class="tg-0pky">Type 2</th>
+                <th class="tg-0lax">Speed</th>
+                <th class="tg-0lax">Special Def</th>
+                <th class="tg-0lax">Special Atk</th>
+                <th class="tg-0lax">Defense</th>
+                <th class="tg-0lax">Attack</th>
+                <th class="tg-0lax">HP</th>
+                <th class="tg-0lax">Weight</th>
+                <th class="tg-0lax">Base Experience</th>
+                <th class="tg-0lax">Ability One</th>
+                <th class="tg-0lax">Ability Two</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-0pky">Geodude</td>
+                <td class="tg-0pky">Rock</td>
+                <td class="tg-0pky">Ground</td>
+                <td class="tg-0lax">40</td>
+                <td class="tg-0lax">80</td>
+                <td class="tg-0lax">100</td>
+                <td class="tg-0lax">30</td>
+                <td class="tg-0lax">30</td>
+                <td class="tg-0lax">20</td>
+                <td class="tg-0lax">200.0</td>
+                <td class="tg-0lax">60</td>
+                <td class="tg-0lax">Rock Head</td>
+                <td class="tg-0lax">Sturdy</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Graveler</td>
+                <td class="tg-0pky">Rock</td>
+                <td class="tg-0pky">Ground</td>
+                <td class="tg-0lax">55</td>
+                <td class="tg-0lax">95</td>
+                <td class="tg-0lax">115</td>
+                <td class="tg-0lax">45</td>
+                <td class="tg-0lax">45</td>
+                <td class="tg-0lax">35</td>
+                <td class="tg-0lax">1050.0</td>
+                <td class="tg-0lax">137</td>
+                <td class="tg-0lax">Rock Head</td>
+                <td class="tg-0lax">Sturdy</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Golem</td>
+                <td class="tg-0pky">Rock</td>
+                <td class="tg-0pky">Ground</td>
+                <td class="tg-0lax">80</td>
+                <td class="tg-0lax">120</td>
+                <td class="tg-0lax">130</td>
+                <td class="tg-0lax">55</td>
+                <td class="tg-0lax">65</td>
+                <td class="tg-0lax">45</td>
+                <td class="tg-0lax">3000.0</td>
+                <td class="tg-0lax">223</td>
+                <td class="tg-0lax">Rock Head</td>
+                <td class="tg-0lax">Sturdy</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Onix</td>
+                <td class="tg-0pky">Rock</td>
+                <td class="tg-0pky">Ground</td>
+                <td class="tg-0lax">35</td>
+                <td class="tg-0lax">45</td>
+                <td class="tg-0lax">160</td>
+                <td class="tg-0lax">30</td>
+                <td class="tg-0lax">45</td>
+                <td class="tg-0lax">70</td>
+                <td class="tg-0lax">2100.0</td>
+                <td class="tg-0lax">77</td>
+                <td class="tg-0lax">Rock Head</td>
+                <td class="tg-0lax">Sturdy</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Rhyhorn</td>
+                <td class="tg-0pky">Ground</td>
+                <td class="tg-0pky">Rock</td>
+                <td class="tg-0lax">80</td>
+                <td class="tg-0lax">85</td>
+                <td class="tg-0lax">95</td>
+                <td class="tg-0lax">30</td>
+                <td class="tg-0lax">30</td>
+                <td class="tg-0lax">25</td>
+                <td class="tg-0lax">1150.0</td>
+                <td class="tg-0lax">69</td>
+                <td class="tg-0lax">Lightning Rod</td>
+                <td class="tg-0lax">Rock Head</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Rhydon</td>
+                <td class="tg-0pky">Ground</td>
+                <td class="tg-0pky">Rock</td>
+                <td class="tg-0lax">105</td>
+                <td class="tg-0lax">130</td>
+                <td class="tg-0lax">120</td>
+                <td class="tg-0lax">45</td>
+                <td class="tg-0lax">45</td>
+                <td class="tg-0lax">40</td>
+                <td class="tg-0lax">1200.0</td>
+                <td class="tg-0lax">170</td>
+                <td class="tg-0lax">Lightning Rod</td>
+                <td class="tg-0lax">Rock Head</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Omanyte</td>
+                <td class="tg-0pky">Rock</td>
+                <td class="tg-0pky">Water</td>
+                <td class="tg-0lax">35</td>
+                <td class="tg-0lax">40</td>
+                <td class="tg-0lax">100</td>
+                <td class="tg-0lax">90</td>
+                <td class="tg-0lax">55</td>
+                <td class="tg-0lax">35</td>
+                <td class="tg-0lax">75.0</td>
+                <td class="tg-0lax">71</td>
+                <td class="tg-0lax">Swift Swim</td>
+                <td class="tg-0lax">Shell Armor</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Omastar</td>
+                <td class="tg-0pky">Rock</td>
+                <td class="tg-0pky">Water</td>
+                <td class="tg-0lax">70</td>
+                <td class="tg-0lax">60</td>
+                <td class="tg-0lax">125</td>
+                <td class="tg-0lax">115</td>
+                <td class="tg-0lax">70</td>
+                <td class="tg-0lax">55</td>
+                <td class="tg-0lax">350.0</td>
+                <td class="tg-0lax">173</td>
+                <td class="tg-0lax">Swift Swim</td>
+                <td class="tg-0lax">Shell Armor</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Kabuto</td>
+                <td class="tg-0pky">Rock</td>
+                <td class="tg-0pky">Water</td>
+                <td class="tg-0lax">30</td>
+                <td class="tg-0lax">80</td>
+                <td class="tg-0lax">90</td>
+                <td class="tg-0lax">55</td>
+                <td class="tg-0lax">45</td>
+                <td class="tg-0lax">55</td>
+                <td class="tg-0lax">115.0</td>
+                <td class="tg-0lax">71</td>
+                <td class="tg-0lax">Swift Swim</td>
+                <td class="tg-0lax">Battle Armor</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Kabutops</td>
+                <td class="tg-0pky">Rock</td>
+                <td class="tg-0pky">Water</td>
+                <td class="tg-0lax">60</td>
+                <td class="tg-0lax">115</td>
+                <td class="tg-0lax">105</td>
+                <td class="tg-0lax">65</td>
+                <td class="tg-0lax">70</td>
+                <td class="tg-0lax">80</td>
+                <td class="tg-0lax">405.0</td>
+                <td class="tg-0lax">173</td>
+                <td class="tg-0lax">Swift Swim</td>
+                <td class="tg-0lax">Battle Armor</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Aerodactyl</td>
+                <td class="tg-0pky">Rock</td>
+                <td class="tg-0pky">Flying</td>
+                <td class="tg-0lax">80</td>
+                <td class="tg-0lax">105</td>
+                <td class="tg-0lax">65</td>
+                <td class="tg-0lax">60</td>
+                <td class="tg-0lax">75</td>
+                <td class="tg-0lax">130</td>
+                <td class="tg-0lax">590.0</td>
+                <td class="tg-0lax">180</td>
+                <td class="tg-0lax">Rock Head</td>
+                <td class="tg-0lax">Pressure</td>
+              </tr>
+            </tbody>
+            </table>
+
+            <div id="my_dataviz"></div>
+            <script src="https://d3js.org/d3.v4.js"></script>
+
+            <script>
+
+                // set the dimensions and margins of the graph
+                var margin = {top: 10, right: 30, bottom: 30, left: 60},
+                    width = 660 - margin.left - margin.right,
+                    height = 600 - margin.top - margin.bottom;
+                
+                // append the svg object to the body of the page
+                var svg = d3.select("#my_dataviz")
+                  .append("svg")
+                    .attr("width", width + margin.left + margin.right)
+                    .attr("height", height + margin.top + margin.bottom)
+                  .append("g")
+                    .attr("transform",
+                          "translate(" + margin.left + "," + margin.top + ")");
+
+                svg.append("circle").attr("cx",200).attr("cy",130).attr("r", 6).style("fill", "#69b3a2")
+                //svg.append("circle").attr("cx",200).attr("cy",160).attr("r", 6).style("fill", "#404080")
+                svg.append("text").attr("x", 220).attr("y", 130).text("Weight").style("font-size", "15px").attr("alignment-baseline","middle")
+                //svg.append("text").attr("x", 220).attr("y", 160).text("variable B").style("font-size", "15px").attr("alignment-baseline","middle")
+                svg.append("text")
+                .attr("text-anchor", "end")
+                .attr("x", width)
+                .attr("y", height + margin.top + 18)
+                .text("Weight");
+                          
+                
+                //Read the data
+                d3.csv("onlyrocks.csv", function(data) {
+                console.log(data)
+                  // Add X axis
+                  var x = d3.scaleLinear()
+                    .domain([0, 4000])
+                    .range([ 0, width ]);
+                  svg.append("g")
+                    .attr("transform", "translate(0," + height + ")")
+                    .call(d3.axisBottom(x));
+                
+                  // Add Y axis
+                  var y = d3.scaleLinear()
+                    .domain([0, 300])
+                    .range([ height, 0]);
+                  svg.append("g")
+                    .call(d3.axisLeft(y));
+                
+                  // Add dots
+                  svg.append('g')
+                    .selectAll("dot")
+                    .data(data)
+                    .enter()
+                    .append("circle")
+                      .attr("cx", function (d) { return x(d.GrLivArea); } )
+                      .attr("cy", function (d) { return y(d.SalePrice); } )
+                      .attr("r", 1.5)
+                      .style("fill", "#69b3a2")
+                
+                })
+                
+                </script>
+        </div><!-- end Q4 -->
+    </ul>
+
+    <script src="index.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </body>
+</html>
